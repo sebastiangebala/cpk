@@ -20,10 +20,10 @@ font-weight: bold;
 margin-top: 2%; 
 padding-right: 0;
 }
-.pomoz {margin-top: 3%; font-family: PT Sans; font-size: 22px; color: #e20000; background-color: #f1f1f1; border-radius: 7pt; padding: 15px}
-.count {margin-top: 3%; font-family: PT Sans; font-size: 18px; color: #2b2f40}
-.payment {margin-top: 3%; font-family: PT Sans; padding-left: 0; padding-right: 0}
-.lub_wpisz {margin-top: 3%; text-align: center; font-family: PT Sans; font-size: 18px; color: #2b2f40}
+.pomoz {margin-top: 2%; font-family: PT Sans; font-size: 22px; color: #e20000; background-color: #f1f1f1; border-radius: 7pt; padding: 15px}
+.count {margin-top: 2%; font-family: PT Sans; font-size: 18px; color: #2b2f40}
+.payment {margin-top: 2%; font-family: PT Sans; padding-left: 0; padding-right: 0}
+.lub_wpisz {margin-top: 2%; text-align: center; font-family: PT Sans; font-size: 18px; color: #2b2f40}
 
 
 .inside_div_1 {
@@ -86,11 +86,11 @@ padding: 5%;
 }
 button {
 font-size: 18px;
-font-weight: bold;
 text-align: center;
 color: #f1f1f1;
 background-color: #e20000;
 border-radius: 7pt;
+padding: 10px;
 }
 .base_page_2 {
 background-image: url('../img/cudzyslow.svg');
