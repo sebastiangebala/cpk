@@ -1,0 +1,106 @@
+{% load staticfiles %}
+	<script src="{% static "js/jquery-1.12.3.js" %}"></script>
+	<script src="{% static "js/jquery.js" %}"></script>
+<html>
+<head>
+  <title>Centrum Praw Kobiet</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">  
+  <link href="//fonts.googleapis.com/css?family=PT Serif&subset=latin,latin-ext" rel="stylesheet" type="text/css">  
+  <link href="//fonts.googleapis.com/css?family=PT Sans&subset=latin,latin-ext" rel="stylesheet" type="text/css">   
+  <link rel="stylesheet" href="{% static 'css/centrum.css' %}">
+</head>
+<body>
+<header class="col-sm-12">
+	<div class="col-sm-6 col-xs-12 base_page">
+		<img class="col-sm-3 col-xs-3 cpk_img" src="{% static "img/cpk_logo.png" %}" alt="cpk"/>
+	</div>
+	<div class="col-sm-6 col-xs-12 base_page_2">
+		<p class="col-sm-12 kolejny_raz">
+			Kolejny raz mnie pobił, więc od niego uciekłam.
+			Zabrał mi dzieci, dom i dostęp do konta.
+			Bez prawnika nie odzyskam swojego życia.
+		</p>
+		<p class="col-sm-12 pomoz">
+			Pomóż kobietom, które doświadczaja przemocy w domu.
+			Twoje wsparcie uwolni je od życia w ciągłym strachu i bólu.
+		</p>
+		<ul class="col-sm-12 count">
+			<li>Wybierasz cel</li>
+			<li>wpłacasz dowolną kwotę</li>
+			<li>Ofiara przemocy otrzymuje wsparcie</li>
+		</ul>
+		<div class="col-sm-12 col-xs-12 payment">
+			<div class="col-sm-3 col-xs-3 pay_pal" id="payment_left">
+				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
+					<img class="col-sm-8 col-xs-8 col-sm-offset-2 col-xs-offset-2" src="{% static "img/bed.svg" %}" alt="bed"/>
+					<div class="col-sm-12 inside_div_1">BEZPIECZNY</br> NOCLEG</div>
+					<p class="col-sm-12 inside_div_2"><b>WPŁACAM</br><font size="4">47</font></b></p>
+				</a>
+			</div>
+			
+			<div class="col-sm-3 col-xs-3 pay_pal" id="payment_center">
+				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
+					<img class="col-sm-8 col-xs-8 col-sm-offset-2 col-xs-offset-2" src="{% static "img/paragraf.svg" %}" alt="paragraf"/>
+					<div class="col-sm-12 inside_div_1">PORADA</br> PRAWNA</div>
+					<p class="col-sm-12 inside_div_2"><b>WPŁACAM</br><font size="4">85</font></b></p>
+				</a>
+			</div>
+			
+			<div class="col-sm-3 col-xs-3 pay_pal" id="payment_right">
+				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
+					<img class="col-sm-8 col-xs-8 col-sm-offset-2 col-xs-offset-2" src="{% static "img/stethoscope.svg" %}" alt="stethoscope"/>
+					<div class="col-sm-12 inside_div_1">OBDUKCJA</br> LEKARSKA</div>
+					<p class="col-sm-12 inside_div_2"><b>WPŁACAM</br><font size="4">150</font></b></p>
+				</a>
+			</div>
+		</div>
+		<p class="col-sm-12 col-xs-12 lub_wpisz">lub wpisz kwotę:</p>
+		<div class="col-sm-12 col-xs-12" id="last_button">
+			<button class="col-sm-4 col-sm-offset-4">
+				wpłacam
+				...>>
+			</button>
+		</div>		
+	</div>
+</header>
+<section class="col-sm-12 content">
+	<div class="col-sm-5 col-sm-offset-1 content_1">
+		<p class="col-sm-12 content_title" id="color_1">Dlaczego potrzebujemy Twojej pomocy właśnie teraz?</p>
+		<p class="col-sm-12 content-text">
+			Trudno w to uwierzyć, ale są mężczyźni, którzy regularnie znęcają się nad swoimi partnerkami.  Często dzieje się to w tak zwanych „normalnych rodzinach”. Brak samodzielności finansowej kobiet oraz ich strach o bezpieczeństwo dzieci powoduje, że same nie potrafią odejść.  Przemoc, której doznają przez miesiące, a nawet lata, zaciska się wokół nich jak pętla i staje się zagrożeniem dla ich życia. </br></br>
+			Centrum Praw Kobiet udziela rocznie pomocy średnio 5500 kobietom, które stały się ofiarami przemocy.  Zgłaszają się do nas, ponieważ często jesteśmy ich ostatnią nadzieją.  Nie mają pieniędzy, by opłacić adwokatów, lekarzy, psychologów. Jesteśmy jedyną drogą ratunku dla nich oraz ich dzieci.</br></br>
+			W tym roku nie otrzymaliśmy dofinansowania z Ministerstwa, z uzasadnieniem, że pomagamy tylko kobietom…  Mimo to chcemy nadal udzielać pomocy każdej kobiecie,  która się do nas zgłosi.  Bez wsparcia finansowego darczyńców nie będzie to możliwe. </br></br>
+		</p>
+	</div>
+	<div class="col-sm-5 col-sm-offset-right-1 content_1">
+		<p class="col-sm-12 content_title" id="color_2">Jak pomagamy kobietom doświadczającym przemocy?</p>
+		<p class="col-sm-12 content-text">
+			Fundacja Centrum Praw Kobiet powstała w 1994 roku. Udzielamy pomocy prawnej i psychologicznej kobietom – ofiarom przemocy oraz dyskryminacji.  Przez 22 lata działalności pomogliśmy 67450 kobietom.  Prowadzimy 5 poradni dla kobiet doświadczających przemocy: w Warszawie, Gdańsku, Wrocławiu, Łodzi i Żyrardowie. Prowadzimy także Specjalistyczny Ośrodek Wsparcia, gdzie kobiety wraz z dziećmi mogą znaleźć schronienie i bezpieczny nocleg.</br></br>
+			Każda kobieta, która przychodzi do poradni zostaje objęta kompleksową opieką i może bezpłatnie skorzystać z porad prawnych – z zakresu prawa karnego i rodzinnego, z porad psycholożki specjalizującej się w interwencjach kryzysowych, a także z pomocy doradczyni zawodowej, która wspiera ją w znalezieniu pracy i usamodzielnieniu się.</br></br>
+			Bardzo ważnym elementem naszego kompleksowego programu pomocy jest wsparcie pokrzywdzonej podczas rozprawy sądowej.  Nasza obserwatorka towarzyszy kobiecie w sądzie i pomaga jej przetrwać konfrontację ze sprawcą na sali sądowej. </br></br>
+		</p>
+	</div>
+</section>
+<div class="col-sm-12 pasek">
+	<div class="col-sm-10 col-sm-offset-1 before_foot">
+		Każda złotówka jest ważna, ponieważ zapewnia bezpieczeństwo kobiecie i jej dzieciom - ofiarom pomocy.
+	</div>
+</div>
+<footer class="col-sm-12">
+	<div class="col-sm-5 col-sm-offset-1 content_2">
+		<b>Fundacja Centrum Praw Kobiet</b> – organizacja pożytku publicznego,</br> 
+		ul. Wilcza 60 lok.19, 00-679 Warszawa</br>
+		KRS: 0000188668 </br>
+		Kontakt: tel. 22 622-25-17, e-mail: sekretariat@cpk.org.pl, <b>www.cpk.org.pl</b></br>
+		nr konta w Banku PKO BP:  <b>59 1020 1156 0000 7102 0059 9241</b></br>
+		PayPal: <b>temida@cpk.org.pl</b>
+	</div>
+	<div class="col-sm-5 col-sm-offset-right-1 content_3">
+		<a href="https://ssl.dotpay.pl/?id=59928&amp;waluta=PLN&amp;opis=Darowizna+na+rzecz+Stowarzyszenie+mali+bracia+Ubogich+-+kolacja+wigilijna+dla+samotnej+osoby+2015" target="_blank">
+			<button class="col-sm-7 col-sm-offset-2 content_4">Przekaż darowiznę >></button>
+		</a>
+	</div>
+</footer>
+</body>
+</html>

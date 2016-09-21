@@ -1,0 +1,135 @@
+{
+border: 1px solid blue;
+}
+header {
+height: 100%;
+background-image: url('../img/background.jpg');
+background-size: 100% 100%;
+}
+.base_page {
+height: 100%;
+}
+
+.kolejny_raz {
+padding-top: 3%; 
+padding-left: 0;
+font-family: PT Serif; 
+font-size: 26px; 
+color: #2b2f40; 
+font-weight: bold; 
+margin-top: 2%; 
+padding-right: 0;
+}
+.pomoz {margin-top: 3%; font-family: PT Sans; font-size: 22px; color: #e20000; background-color: #f1f1f1; border-radius: 7pt; padding: 15px}
+.count {margin-top: 3%; font-family: PT Sans; font-size: 18px; color: #2b2f40}
+.payment {margin-top: 3%; font-family: PT Sans; padding-left: 0; padding-right: 0}
+.lub_wpisz {margin-top: 3%; text-align: center; font-family: PT Sans; font-size: 18px; color: #2b2f40}
+
+
+.inside_div_1 {
+text-align: center;
+color: #2b2f40;
+background-color: #f1f1f1;
+font-weight: bold;
+font-size: 13px;
+}
+.inside_div_2 {
+text-align: center;
+color: #f1f1f1;
+background-color: #e20000;
+margin-bottom: 0;
+padding-top: 10px;
+font-size: 13px;
+}
+.pay_pal {
+border-radius: 7pt;
+border: 4px solid #e20000;
+background-color: #f1f1f1;
+padding-right: 0;
+padding-left: 0;
+}
+
+.content_title {
+font-family: PT Serif;
+font-size: 30px;
+font-weight: bold;
+color: #FF4F00;
+margin-top: 30px;
+}
+#color_1 {color: #ff5a00}
+#color_2 {color: #e20000}
+
+.content-text {
+font-family: PT Sans;
+font-size: 16px;
+}
+.before_foot {
+font-family: PT Serif; 
+font-size: 26px; 
+color: #2b2f40; 
+font-weight: bold;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+#payment_left {
+margin-left: 0;
+}
+#payment_right {
+margin-right: 0;
+float: right;
+}
+#payment_center {
+margin-left: 13%;
+}
+img {
+padding: 5%;
+}
+button {
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+color: #f1f1f1;
+background-color: #e20000;
+border-radius: 7pt;
+}
+.base_page_2 {
+background-image: url('../img/cudzyslow.svg');
+background-size: 25% 25%;
+background-repeat: no-repeat;
+}
+.pasek {
+background-image: url('../img/pasek_dolny.jpg');
+background-size: 100% 100%;
+}
+.content_2 {
+font-family: PT Sans;
+font-size: 12px;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.content_3 {
+font-family: PT Sans;
+font-size: 12px;
+padding-top: 50px;
+}
+.content_4 {
+font-family: PT Sans;
+font-size: 22px;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+.cpk_img {
+padding-left: 0;
+}
+/*small Desktop*/
+@media (min-width: 768px) and (max-width: 992px) {
+.kolejny_raz {
+padding-top: 2%; font-size: 21px;  margin-top: 1%}
+.pomoz {margin-top: 2%; font-size: 17px; padding: 10px}
+.count {margin-top: 2%; font-size: 13px;}
+.payment {margin-top: 2%; }
+.lub_wpisz {margin-top: 2%; font-size: 13px}
+.inside_div_1 {font-size: 10px}
+.inside_div_2 {font-size: 10px}
+}
+}
