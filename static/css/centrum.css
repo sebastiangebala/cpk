@@ -23,18 +23,22 @@ font-weight: bold;
 margin-top: 2%; 
 padding-right: 0;
 }
-.pomoz {margin-top: 2%; font-family: PT Sans; font-size: 22px; color: #e20000; background-color: #f1f1f1; border-radius: 7pt; padding: 15px}
+.pomoz {margin-top: 2%; font-family: PT Sans; font-size: 22px; color: #ff5a00; background-color: #f1f1f1; border-radius: 7pt; padding: 15px}
 .count {margin-top: 2%; font-family: PT Sans; font-size: 18px; color: #2b2f40}
 .payment {margin-top: 2%; font-family: PT Sans; padding-left: 0; padding-right: 0}
 .lub_wpisz {margin-top: 2%; text-align: center; font-family: PT Sans; font-size: 18px; color: #2b2f40}
 
-
+.img_in_pay {
+height: 65%;
+width: 65%;
+}
 .inside_div_1 {
 text-align: center;
 color: #2b2f40;
 background-color: #f1f1f1;
 font-weight: bold;
 font-size: 13px;
+padding-bottom: 2%;
 }
 .inside_div_2 {
 text-align: center;
@@ -60,7 +64,7 @@ color: #FF4F00;
 margin-top: 30px;
 }
 #color_1 {color: #ff5a00}
-#color_2 {color: #e20000}
+#color_2 {color: #ff5a00}
 
 .content-text {
 font-family: PT Sans;
@@ -87,7 +91,7 @@ margin-left: 13%;
 img {
 padding: 5%;
 }
-button {
+.button_all {
 font-size: 18px;
 text-align: center;
 color: #f1f1f1;
