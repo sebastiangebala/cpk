@@ -18,10 +18,8 @@
   
 </head>
 <body>
-<header class="col-sm-12">	
-	<div class="col-sm-6 col-xs-12 base_page base_page_">
-		<img class="col-sm-3 col-xs-3 cpk_img" src="{% static "img/cpk_logo.png" %}" alt="cpk"/>
-		<!--For phones and tablets only-->
+<header class="col-sm-12">
+	<!--For phones and tablets only-->
 		<div class="col-xs-12 hidden-sm hidden-md hidden-lg white_box">
 			<p class="col-xs-12 hidden-sm hidden-md hidden-lg kolejny_raz_phone">
 				Kolejny raz mnie pobił, więc od niego uciekłam.
@@ -33,133 +31,99 @@
 				Twoje wsparcie uwolni je od życia w ciągłym strachu i bólu.
 			</p>
 		</div>
-		<!--End for phone-->		
-	</div>
-	<div class="col-sm-6 col-xs-12 base_page_2_t">
+	<!--End for phone-->	
+	<div class="col-sm-6 col-xs-12 base_page">
+		<img class="col-sm-3 col-xs-3 cpk_img" src="{% static "img/cpk_logo.png" %}" alt="cpk"/>
 		
-		<p class="kolejny_raz_t">
+	</div>
+	<div class="col-sm-6 col-xs-12 base_page_2">
+		
+		<p class="kolejny_raz hidden-xs">
 			Kolejny raz mnie pobił, więc od niego uciekłam.</br>
 			Zabrał mi dzieci, dom i dostęp do konta.</br>
 			Bez prawnika nie odzyskam swojego życia.
 		</p>
 		
-		<p class="pomoz_t">
+		<p class="pomoz hidden-xs">
 			Pomóż kobietom, które doświadczaja przemocy w domu.</br>
 			Twoje wsparcie uwolni je od życia w ciągłym strachu i bólu.
 		</p>
 		
-		<ul class="count_t">
+		<ul class="count">
 			<li>Wybierasz cel</li>
 			<li>Wpłacasz dowolną kwotę</li>
 			<li>Ofiara przemocy otrzymuje wsparcie</li>
 		</ul>
 		
-		<div class="payment_t">
-			<div class="pay_pal_t" id="payment_left_t">
+		
+		<!--For phones and tablets only-->
+		<div id="payment_phone">
+			<div class="control_box">
 				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
-					<img class="img_in_pay_t" src="{% static "img/bed.svg" %}" alt="bed"/>
-					<div class="inside_div_1_t">BEZPIECZNY</br> NOCLEG</div>
-					<p class="inside_div_2_t"><b>wpłacam</br><font size="4">47</font></b></p>
+				<div class="pay_pal_phone">
+					<img class="img_in_pay" src="{% static "img/bed.svg" %}" alt="bed"/>
+					<div class="inside_div_1">BEZPIECZNY</br> NOCLEG</div>
+					<p class="inside_div_2"><b>wpłacam</br><font size="4">47</font></b></p>
+				</div>
 				</a>
 			</div>
 			
-			<div class="pay_pal_t" id="payment_center_t">
+			<div class="control_box">
 				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
-					<img class="img_in_pay_t" src="{% static "img/paragraf.svg" %}" alt="paragraf"/>
-					<div class="inside_div_1_t">PORADA</br> PRAWNA</div>
-					<p class="inside_div_2_t"><b>wpłacam</br><font size="4">85</font></b></p>
+				<div class="pay_pal_phone">
+					<img class="img_in_pay" src="{% static "img/paragraf.svg" %}" alt="paragraf"/>
+					<div class="inside_div_1">PORADA</br> PRAWNA</div>
+					<p class="inside_div_2"><b>wpłacam</br><font size="4">85</font></b></p>
+				</div>
 				</a>
 			</div>
-			
-			<div class="pay_pal_t" id="payment_right_t">
+			<div class="control_box">
 				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
-					<img class="img_in_pay_t" src="{% static "img/stethoscope.svg" %}" alt="stethoscope"/>
-					<div class="inside_div_1_t">OBDUKCJA</br> LEKARSKA</div>
-					<p class="inside_div_2_t"><b>wpłacam</br><font size="4">150</font></b></p>
+				<div class="pay_pal_phone">
+					<img class="img_in_pay" id="img_in_pay_stet" src="{% static "img/stethoscope.svg" %}" alt="stethoscope"/>
+					<div class="inside_div_1">OBDUKCJA</br> LEKARSKA</div>
+					<p class="inside_div_2"><b>wpłacam</br><font size="4">150</font></b></p>
+				</div>
 				</a>
 			</div>
 		</div>
-		<p class="lub_wpisz_t">lub wpisz kwotę:</p>
-		<div class="last_button_t">
-			<div class="button_all_t">
+		<!--End for phones-->
+		
+			
+		<div class="payment">
+			<div class="pay_pal" id="payment_left">
+				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
+					<img class="img_in_pay" src="{% static "img/bed.svg" %}" alt="bed"/>
+					<div class="inside_div_1">BEZPIECZNY</br> NOCLEG</div>
+					<p class="inside_div_2"><b>wpłacam</br><font size="4">47</font></b></p>
+				</a>
+			</div>
+			
+			<div class="pay_pal" id="payment_center">
+				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
+					<img class="img_in_pay" src="{% static "img/paragraf.svg" %}" alt="paragraf"/>
+					<div class="inside_div_1">PORADA</br> PRAWNA</div>
+					<p class="inside_div_2"><b>wpłacam</br><font size="4">85</font></b></p>
+				</a>
+			</div>
+			
+			<div class="pay_pal" id="payment_right">
+				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
+					<img class="img_in_pay" id="img_in_pay_stet" src="{% static "img/stethoscope.svg" %}" alt="stethoscope"/>
+					<div class="inside_div_1">OBDUKCJA</br> LEKARSKA</div>
+					<p class="inside_div_2"><b>wpłacam</br><font size="4">150</font></b></p>
+				</a>
+			</div>
+		</div>
+		<p class="lub_wpisz">lub wpisz kwotę:</p>
+		<div class="last_button">
+			<div class="button_all">
 				wpłacam
 				............ >>
 			</div>
 		</div>		
 	</div>
 </header>
-	<!--
-<header class="col-sm-12">	
-	<div class="col-sm-6 col-xs-12 base_page base_page_">
-		<img class="col-sm-3 col-xs-3 cpk_img" src="{% static "img/cpk_logo.png" %}" alt="cpk"/>
-		<!--For phones and tablets only-->
-		<!--
-		<div class="col-xs-12 hidden-sm hidden-md hidden-lg white_box">
-			<p class="col-xs-12 hidden-sm hidden-md hidden-lg kolejny_raz_phone">
-				Kolejny raz mnie pobił, więc od niego uciekłam.
-				Zabrał mi dzieci, dom i dostęp do konta.
-				Bez prawnika nie odzyskam swojego życia.
-			</p>
-			<p class="col-sm-12 hidden-sm hidden-md hidden-lg pomoz_phone">
-				Pomóż kobietom, które doświadczaja przemocy w domu.
-				Twoje wsparcie uwolni je od życia w ciągłym strachu i bólu.
-			</p>
-		</div>
-		<!--End for phone-->	
-<!--	
-	</div>
-	<div class="col-sm-6 col-xs-12 base_page_2">
-		
-		<p class="col-sm-10 hidden-xs kolejny_raz">
-			Kolejny raz mnie pobił, więc od niego uciekłam.
-			Zabrał mi dzieci, dom i dostęp do konta.
-			Bez prawnika nie odzyskam swojego życia.
-		</p>
-		<p class="col-sm-10 hidden-xs pomoz">
-			Pomóż kobietom, które doświadczaja przemocy w domu.
-			Twoje wsparcie uwolni je od życia w ciągłym strachu i bólu.
-		</p>
-		
-		<ul class="col-sm-10 col-xs-12 count">
-			<li>Wybierasz cel</li>
-			<li>wpłacasz dowolną kwotę</li>
-			<li>Ofiara przemocy otrzymuje wsparcie</li>
-		</ul>
-		<div class="col-sm-10 col-xs-12 payment">
-			<div class="col-sm-3 col-xs-3 pay_pal" id="payment_left">
-				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
-					<img class="col-sm-8 col-xs-8 col-sm-offset-2 col-xs-offset-2 img_in_pay" src="{% static "img/bed.svg" %}" alt="bed"/>
-					<div class="col-sm-12 inside_div_1">BEZPIECZNY</br> NOCLEG</div>
-					<p class="col-sm-12 inside_div_2"><b>WPŁACAM</br><font size="4">47</font></b></p>
-				</a>
-			</div>
-			
-			<div class="col-sm-3 col-xs-3 col-sm-offset-1-half pay_pal" id="payment_center">
-				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
-					<img class="col-sm-8 col-xs-8 col-sm-offset-2 col-xs-offset-2 img_in_pay" src="{% static "img/paragraf.svg" %}" alt="paragraf"/>
-					<div class="col-sm-12 inside_div_1">PORADA</br> PRAWNA</div>
-					<p class="col-sm-12 inside_div_2"><b>WPŁACAM</br><font size="4">85</font></b></p>
-				</a>
-			</div>
-			
-			<div class="col-sm-3 col-xs-3 pay_pal" id="payment_right">
-				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
-					<img class="col-sm-8 col-xs-8 col-sm-offset-2 col-xs-offset-2 img_in_pay" src="{% static "img/stethoscope.svg" %}" alt="stethoscope"/>
-					<div class="col-sm-12 inside_div_1">OBDUKCJA</br> LEKARSKA</div>
-					<p class="col-sm-12 inside_div_2"><b>WPŁACAM</br><font size="4">150</font></b></p>
-				</a>
-			</div>
-		</div>
-		<p class="col-sm-10 col-xs-10 lub_wpisz">lub wpisz kwotę:</p>
-		<div class="col-sm-10 col-xs-12 last_button">
-			<div class="col-sm-4 col-sm-offset-4 button_all">
-				Wpłacam
-				...>>
-			</div>
-		</div>		
-	</div>
-</header>
--->
 <section class="col-sm-12 content">
 	<div class="col-sm-5 col-sm-offset-1 content_1">
 		<p class="col-sm-12 content_title" id="color_1">Dlaczego potrzebujemy Twojej pomocy właśnie teraz?</p>
@@ -194,7 +158,7 @@
 	</div>
 	<div class="col-sm-5 col-sm-offset-right-1 content_3">
 		<a href="https://ssl.dotpay.pl/?id=59928&amp;waluta=PLN&amp;opis=Darowizna+na+rzecz+Stowarzyszenie+mali+bracia+Ubogich+-+kolacja+wigilijna+dla+samotnej+osoby+2015" target="_blank">
-			<div class="col-sm-7 col-sm-offset-2 content_4 button_all"><b>Przekaż darowiznę >></b></div>
+			<div class="col-sm-7 col-sm-offset-2 content_4 button_all_2"><b>Przekaż darowiznę >></b></div>
 		</a>
 	</div>
 </footer>
