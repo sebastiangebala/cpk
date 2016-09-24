@@ -5,9 +5,10 @@ html, body{
 height: 100%;
 }
 header {
-background-image: url('../img/background_2.jpg');
-background-size: cover;
-height: 100%;
+background-image: url('../img/background.jpg');
+background-repeat: no-repeat;
+background-position: center; 
+height: 829px;
 }
 .base_page {
 height: 100%;
@@ -178,14 +179,14 @@ background-size: 100% 100%;
 .base_page_2_t {
 height: 100%;
 background-image: url('../img/cudzyslow.svg');
-background-size: 25% 25%;
-margin-top: 5px;
+background-size: 25% 22%;
+margin-top: 15px;
 background-repeat: no-repeat;
 max-width: 600px;
 }
-.kolejny_raz_t {margin-top: 30px; padding-left: 0; font-family: PT Serif; font-size: 24px; line-height: 29px; color: #2b2f40; font-weight: bold; padding-right: 0;}
+.kolejny_raz_t {margin-top: 40px; padding-left: 0; font-family: PT Serif; font-size: 24px; line-height: 29px; color: #2b2f40; font-weight: bold; padding-right: 0;}
 .pomoz_t {margin-top: 30px; font-family: PT Sans; font-size: 20px; color: #ff5a00; background-color: #f1f1f1; border-radius: 7pt; padding: 15px;}
-.count_t {margin-top: 30px; font-family: PT Sans; font-size: 16px; line-height: 26px; color: #2b2f40;}
+.count_t {margin-top: 30px; font-family: PT Sans; font-size: 16px; line-height: 26px; color: #2b2f40}
 .payment_t {margin-top: 25px; font-family: PT Sans; padding-left: 0; padding-right: 0;}
 .lub_wpisz_t {margin-top: 40px; text-align: center; font-family: PT Sans; font-size: 16px; color: #2b2f40;}
 .pay_pal_t {
