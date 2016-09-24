@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-{% load staticfiles %}	
-
+{% load staticfiles %}
 <html>
 <head>
   <title>Centrum Praw Kobiet</title>
@@ -19,26 +18,114 @@
   
 </head>
 <body>
-<header class="col-sm-12">
-	<div class="col-sm-6 col-xs-12 base_page">
+<header class="col-sm-12">	
+	<div class="col-sm-5 col-xs-12 base_page base_page_">
 		<img class="col-sm-3 col-xs-3 cpk_img" src="{% static "img/cpk_logo.png" %}" alt="cpk"/>
+		<!--For phones and tablets only-->
+		<div class="col-xs-12 hidden-sm hidden-md hidden-lg white_box">
+			<p class="col-xs-12 hidden-sm hidden-md hidden-lg kolejny_raz_phone">
+				Kolejny raz mnie pobił, więc od niego uciekłam.
+				Zabrał mi dzieci, dom i dostęp do konta.
+				Bez prawnika nie odzyskam swojego życia.
+			</p>
+			<p class="col-sm-12 hidden-sm hidden-md hidden-lg pomoz_phone">
+				Pomóż kobietom, które doświadczaja przemocy w domu.
+				Twoje wsparcie uwolni je od życia w ciągłym strachu i bólu.
+			</p>
+		</div>
+		<!--End for phone-->		
+	</div>
+	<div class="col-sm-7 col-xs-12 base_page_2_t">
+		
+		<p class="kolejny_raz_t">
+			Kolejny raz mnie pobił, więc od niego uciekłam.</br>
+			Zabrał mi dzieci, dom i dostęp do konta.</br>
+			Bez prawnika nie odzyskam swojego życia.
+		</p>
+		
+		<p class="pomoz_t">
+			Pomóż kobietom, które doświadczaja przemocy w domu.</br>
+			Twoje wsparcie uwolni je od życia w ciągłym strachu i bólu.
+		</p>
+		
+		<ul class="count_t">
+			<li>Wybierasz cel</li>
+			<li>Wpłacasz dowolną kwotę</li>
+			<li>Ofiara przemocy otrzymuje wsparcie</li>
+		</ul>
+		
+		<div class="payment_t">
+			<div class="pay_pal_t" id="payment_left_t">
+				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
+					<img class="img_in_pay_t" src="{% static "img/bed.svg" %}" alt="bed"/>
+					<div class="inside_div_1_t">BEZPIECZNY</br> NOCLEG</div>
+					<p class="inside_div_2_t"><b>wpłacam</br><font size="4">47</font></b></p>
+				</a>
+			</div>
+			
+			<div class="pay_pal_t" id="payment_center_t">
+				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
+					<img class="img_in_pay_t" src="{% static "img/paragraf.svg" %}" alt="paragraf"/>
+					<div class="inside_div_1_t">PORADA</br> PRAWNA</div>
+					<p class="inside_div_2_t"><b>wpłacam</br><font size="4">85</font></b></p>
+				</a>
+			</div>
+			
+			<div class="pay_pal_t" id="payment_right_t">
+				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
+					<img class="img_in_pay_t" src="{% static "img/stethoscope.svg" %}" alt="stethoscope"/>
+					<div class="inside_div_1_t">OBDUKCJA</br> LEKARSKA</div>
+					<p class="inside_div_2_t"><b>wpłacam</br><font size="4">150</font></b></p>
+				</a>
+			</div>
+		</div>
+		<p class="lub_wpisz_t">lub wpisz kwotę:</p>
+		<div class="last_button_t">
+			<div class="button_all_t">
+				wpłacam
+				............ >>
+			</div>
+		</div>		
+	</div>
+</header>
+	<!--
+<header class="col-sm-12">	
+	<div class="col-sm-6 col-xs-12 base_page base_page_">
+		<img class="col-sm-3 col-xs-3 cpk_img" src="{% static "img/cpk_logo.png" %}" alt="cpk"/>
+		<!--For phones and tablets only-->
+		<!--
+		<div class="col-xs-12 hidden-sm hidden-md hidden-lg white_box">
+			<p class="col-xs-12 hidden-sm hidden-md hidden-lg kolejny_raz_phone">
+				Kolejny raz mnie pobił, więc od niego uciekłam.
+				Zabrał mi dzieci, dom i dostęp do konta.
+				Bez prawnika nie odzyskam swojego życia.
+			</p>
+			<p class="col-sm-12 hidden-sm hidden-md hidden-lg pomoz_phone">
+				Pomóż kobietom, które doświadczaja przemocy w domu.
+				Twoje wsparcie uwolni je od życia w ciągłym strachu i bólu.
+			</p>
+		</div>
+		<!--End for phone-->	
+<!--	
 	</div>
 	<div class="col-sm-6 col-xs-12 base_page_2">
-		<p class="col-sm-12 col-xs-12 kolejny_raz">
+		
+		<p class="col-sm-10 hidden-xs kolejny_raz">
 			Kolejny raz mnie pobił, więc od niego uciekłam.
 			Zabrał mi dzieci, dom i dostęp do konta.
 			Bez prawnika nie odzyskam swojego życia.
 		</p>
-		<p class="col-sm-12 col-xs-12 pomoz">
+		<p class="col-sm-10 hidden-xs pomoz">
 			Pomóż kobietom, które doświadczaja przemocy w domu.
 			Twoje wsparcie uwolni je od życia w ciągłym strachu i bólu.
 		</p>
-		<ul class="col-sm-12 col-xs-12 count">
+		
+		<ul class="col-sm-10 col-xs-12 count">
 			<li>Wybierasz cel</li>
 			<li>wpłacasz dowolną kwotę</li>
 			<li>Ofiara przemocy otrzymuje wsparcie</li>
 		</ul>
-		<div class="col-sm-12 col-xs-12 payment">
+		<div class="col-sm-10 col-xs-12 payment">
 			<div class="col-sm-3 col-xs-3 pay_pal" id="payment_left">
 				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
 					<img class="col-sm-8 col-xs-8 col-sm-offset-2 col-xs-offset-2 img_in_pay" src="{% static "img/bed.svg" %}" alt="bed"/>
@@ -47,7 +134,7 @@
 				</a>
 			</div>
 			
-			<div class="col-sm-3 col-xs-3 pay_pal" id="payment_center">
+			<div class="col-sm-3 col-xs-3 col-sm-offset-1-half pay_pal" id="payment_center">
 				<a href="https://ssl.dotpay.pl/?pid=XBS63EH3JFP7ZTQ2GRJQSY9Z8HD7JNT9" target="_blank">
 					<img class="col-sm-8 col-xs-8 col-sm-offset-2 col-xs-offset-2 img_in_pay" src="{% static "img/paragraf.svg" %}" alt="paragraf"/>
 					<div class="col-sm-12 inside_div_1">PORADA</br> PRAWNA</div>
@@ -63,8 +150,8 @@
 				</a>
 			</div>
 		</div>
-		<p class="col-sm-12 col-xs-12 lub_wpisz">lub wpisz kwotę:</p>
-		<div class="col-sm-12 col-xs-12" id="last_button">
+		<p class="col-sm-10 col-xs-10 lub_wpisz">lub wpisz kwotę:</p>
+		<div class="col-sm-10 col-xs-12 last_button">
 			<div class="col-sm-4 col-sm-offset-4 button_all">
 				Wpłacam
 				...>>
@@ -72,20 +159,21 @@
 		</div>		
 	</div>
 </header>
+-->
 <section class="col-sm-12 content">
 	<div class="col-sm-5 col-sm-offset-1 content_1">
 		<p class="col-sm-12 content_title" id="color_1">Dlaczego potrzebujemy Twojej pomocy właśnie teraz?</p>
 		<p class="col-sm-12 content-text">
-			Trudno w to uwierzyć, ale są mężczyźni, którzy regularnie znęcają się nad swoimi partnerkami.  Często dzieje się to w tak zwanych „normalnych rodzinach”. Brak samodzielności finansowej kobiet oraz ich strach o bezpieczeństwo dzieci powoduje, że same nie potrafią odejść.  Przemoc, której doznają przez miesiące, a nawet lata, zaciska się wokół nich jak pętla i staje się zagrożeniem dla ich życia. </br></br>
+			Trudno w to uwierzyć, ale są mężczyźni, którzy regularnie znęcają się nad swoimi partnerkami.  Często dzieje się to w tak zwanych „normalnych rodzinach”. <b>Brak samodzielności finansowej kobiet oraz ich strach o bezpieczeństwo dzieci powoduje, że same nie potrafią odejść.</b>  Przemoc, której doznają przez miesiące, a nawet lata, zaciska się wokół nich jak pętla i staje się zagrożeniem dla ich życia. </br></br>
 			Centrum Praw Kobiet udziela rocznie pomocy średnio 5500 kobietom, które stały się ofiarami przemocy.  Zgłaszają się do nas, ponieważ często jesteśmy ich ostatnią nadzieją.  Nie mają pieniędzy, by opłacić adwokatów, lekarzy, psychologów. Jesteśmy jedyną drogą ratunku dla nich oraz ich dzieci.</br></br>
-			W tym roku nie otrzymaliśmy dofinansowania z Ministerstwa, z uzasadnieniem, że pomagamy tylko kobietom…  Mimo to chcemy nadal udzielać pomocy każdej kobiecie,  która się do nas zgłosi.  Bez wsparcia finansowego darczyńców nie będzie to możliwe. </br></br>
+			<b>W tym roku nie otrzymaliśmy dofinansowania z Ministerstwa, z uzasadnieniem, że pomagamy tylko kobietom…</b>  Mimo to chcemy nadal udzielać pomocy każdej kobiecie,  która się do nas zgłosi.  Bez wsparcia finansowego darczyńców nie będzie to możliwe. </br></br>
 		</p>
 	</div>
 	<div class="col-sm-5 col-sm-offset-right-1 content_1">
 		<p class="col-sm-12 content_title" id="color_2">Jak pomagamy kobietom doświadczającym przemocy?</p>
 		<p class="col-sm-12 content-text">
-			Fundacja Centrum Praw Kobiet powstała w 1994 roku. Udzielamy pomocy prawnej i psychologicznej kobietom – ofiarom przemocy oraz dyskryminacji.  Przez 22 lata działalności pomogliśmy 67450 kobietom.  Prowadzimy 5 poradni dla kobiet doświadczających przemocy: w Warszawie, Gdańsku, Wrocławiu, Łodzi i Żyrardowie. Prowadzimy także Specjalistyczny Ośrodek Wsparcia, gdzie kobiety wraz z dziećmi mogą znaleźć schronienie i bezpieczny nocleg.</br></br>
-			Każda kobieta, która przychodzi do poradni zostaje objęta kompleksową opieką i może bezpłatnie skorzystać z porad prawnych – z zakresu prawa karnego i rodzinnego, z porad psycholożki specjalizującej się w interwencjach kryzysowych, a także z pomocy doradczyni zawodowej, która wspiera ją w znalezieniu pracy i usamodzielnieniu się.</br></br>
+			Fundacja Centrum Praw Kobiet powstała w 1994 roku. Udzielamy pomocy prawnej i psychologicznej kobietom – ofiarom przemocy oraz dyskryminacji.  <b>Przez 22 lata działalności pomogliśmy 67450 kobietom.</b>  Prowadzimy 5 poradni dla kobiet doświadczających przemocy: w Warszawie, Gdańsku, Wrocławiu, Łodzi i Żyrardowie. Prowadzimy także Specjalistyczny Ośrodek Wsparcia, gdzie kobiety wraz z dziećmi mogą znaleźć schronienie i bezpieczny nocleg.</br></br>
+			<b>Każda kobieta, która przychodzi do poradni zostaje objęta kompleksową opieką i może bezpłatnie skorzystać z porad prawnych</b> – z zakresu prawa karnego i rodzinnego, z porad psycholożki specjalizującej się w interwencjach kryzysowych, a także z pomocy doradczyni zawodowej, która wspiera ją w znalezieniu pracy i usamodzielnieniu się.</br></br>
 			Bardzo ważnym elementem naszego kompleksowego programu pomocy jest wsparcie pokrzywdzonej podczas rozprawy sądowej.  Nasza obserwatorka towarzyszy kobiecie w sądzie i pomaga jej przetrwać konfrontację ze sprawcą na sali sądowej. </br></br>
 		</p>
 	</div>
@@ -106,7 +194,7 @@
 	</div>
 	<div class="col-sm-5 col-sm-offset-right-1 content_3">
 		<a href="https://ssl.dotpay.pl/?id=59928&amp;waluta=PLN&amp;opis=Darowizna+na+rzecz+Stowarzyszenie+mali+bracia+Ubogich+-+kolacja+wigilijna+dla+samotnej+osoby+2015" target="_blank">
-			<div class="col-sm-7 col-sm-offset-2 content_4 button_all">Przekaż darowiznę >></div>
+			<div class="col-sm-7 col-sm-offset-2 content_4 button_all"><b>Przekaż darowiznę >></b></div>
 		</a>
 	</div>
 </footer>

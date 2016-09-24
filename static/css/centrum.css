@@ -1,33 +1,42 @@
 {
 border: 1px solid blue;
 }
-html,body{
+html, body{
 height: 100%;
 }
 header {
+background-image: url('../img/background_2.jpg');
+background-size: cover;
 height: 100%;
-background-image: url('../img/background.jpg');
-background-size: 100% 100%;
 }
 .base_page {
 height: 100%;
 }
-
-.kolejny_raz {
-padding-top: 3%; 
-padding-left: 0;
-font-family: PT Serif; 
-font-size: 26px; 
-color: #2b2f40; 
-font-weight: bold; 
-margin-top: 2%; 
-padding-right: 0;
+.kolejny_raz {padding-left: 0; font-family: PT Serif; font-size: 24px; color: #2b2f40; font-weight: bold; padding-right: 0;
+position: absolute;
+top: 3%;
 }
-.pomoz {margin-top: 2%; font-family: PT Sans; font-size: 22px; color: #ff5a00; background-color: #f1f1f1; border-radius: 7pt; padding: 15px}
-.count {margin-top: 2%; font-family: PT Sans; font-size: 18px; color: #2b2f40}
-.payment {margin-top: 2%; font-family: PT Sans; padding-left: 0; padding-right: 0}
-.lub_wpisz {margin-top: 2%; text-align: center; font-family: PT Sans; font-size: 18px; color: #2b2f40}
-
+.pomoz {font-family: PT Sans; font-size: 20px; color: #ff5a00; background-color: #f1f1f1; border-radius: 7pt; padding: 15px;
+position: absolute;
+top: 25%;
+}
+.count {margin-top: 2%; font-family: PT Sans; font-size: 18px; color: #2b2f40;
+position: absolute;
+top: 40%;
+}
+.payment {margin-top: 2%; font-family: PT Sans; padding-left: 0; padding-right: 0;
+position: absolute;
+bottom: 17%;
+}
+.lub_wpisz {text-align: center; font-family: PT Sans; font-size: 18px; color: #2b2f40;
+position: absolute;
+bottom: 10%;
+}
+.last_button {
+position: absolute;
+bottom: 3%;
+}
+.col-sm-offset-1-half {margin-left: 12.5%;}
 .img_in_pay {
 height: 65%;
 width: 65%;
@@ -55,10 +64,9 @@ background-color: #f1f1f1;
 padding-right: 0;
 padding-left: 0;
 }
-
 .content_title {
 font-family: PT Serif;
-font-size: 30px;
+font-size: 26px;
 font-weight: bold;
 color: #FF4F00;
 margin-top: 30px;
@@ -68,7 +76,8 @@ margin-top: 30px;
 
 .content-text {
 font-family: PT Sans;
-font-size: 16px;
+font-size: 15px;
+text-align: justify;
 }
 .before_foot {
 font-family: PT Serif; 
@@ -85,21 +94,19 @@ margin-left: 0;
 margin-right: 0;
 float: right;
 }
-#payment_center {
-margin-left: 13%;
-}
+
 img {
 padding: 5%;
 }
 .button_all {
-font-size: 18px;
+font-size: 20px;
 text-align: center;
 color: #f1f1f1;
 background-color: #e20000;
 border-radius: 7pt;
-padding: 10px;
 }
 .base_page_2 {
+height: 100%;
 background-image: url('../img/cudzyslow.svg');
 background-size: 25% 25%;
 background-repeat: no-repeat;
@@ -111,38 +118,127 @@ background-size: 100% 100%;
 .content_2 {
 font-family: PT Sans;
 font-size: 12px;
-padding-top: 50px;
-padding-bottom: 50px;
+padding-top: 40px;
+padding-bottom: 40px;
 }
 .content_3 {
 font-family: PT Sans;
-font-size: 12px;
-padding-top: 50px;
+padding-top: 40px;
 }
 .content_4 {
 font-family: PT Sans;
-font-size: 22px;
-padding-top: 15px;
-padding-bottom: 15px;
+font-size: 24px;
+padding-top: 12px;
+padding-bottom: 12px;
 }
 .cpk_img {
 padding-left: 0;
 }
 /*small Desktop*/
 @media (min-width: 768px) and (max-width: 992px) {
-.kolejny_raz {padding-top: 2%; font-size: 21px;  margin-top: 1%}
-.pomoz {margin-top: 2%; font-size: 17px; padding: 10px}
+.kolejny_raz {padding-top: 2%; font-size: 18px;  margin-top: 1%}
+.pomoz {margin-top: 2%; font-size: 15px; padding: 10px}
 .count {margin-top: 2%; font-size: 13px}
 .payment {margin-top: 2%}
 .lub_wpisz {margin-top: 2%; font-size: 13px}
+.button_all {font-size: 13px}
 .inside_div_1 {font-size: 10px}
 .inside_div_2 {font-size: 10px}
 }
-/*phone*/
-@media only screen and (max-width: 768px) {
+/*for Phone and Tablets*/
+@media only screen and (max-width: 767px) {
+.white_box {
+position: absolute;
+bottom: 0px;
+background-image: url('../img/cudzyslow.svg');
+background-size: 50% 50%;
+background-repeat: no-repeat;
+background: white;
+}
+header {
+left: 0px;
+}
+.kolejny_raz_phone {font-family: PT Serif; font-size: 26px; color: #2b2f40; font-weight: bold; padding-left: 0px; padding-right: 0px}
+.pomoz_phone {font-family: PT Sans; font-size: 22px; color: #ff5a00; padding-left: 0px; padding-right: 0px}
+.base_page_2 {background-image: none}
+.base_page {padding-left: 0px; padding-right: 0px}
+}
+/*small Tablets only*/
+@media (min-width: 545px) and (max-width: 767px) {
+}
+/*Only phone */
+@media only screen and (max-width: 544px) {
 header {
 height: 100%;
 background-image: url('../img/background_phone.jpg');
 background-size: 100% 100%;
 }
+}
+/*test*/
+.base_page_2_t {
+height: 100%;
+background-image: url('../img/cudzyslow.svg');
+background-size: 25% 25%;
+margin-top: 5px;
+background-repeat: no-repeat;
+max-width: 600px;
+}
+.kolejny_raz_t {margin-top: 30px; padding-left: 0; font-family: PT Serif; font-size: 24px; line-height: 29px; color: #2b2f40; font-weight: bold; padding-right: 0;}
+.pomoz_t {margin-top: 30px; font-family: PT Sans; font-size: 20px; color: #ff5a00; background-color: #f1f1f1; border-radius: 7pt; padding: 15px;}
+.count_t {margin-top: 30px; font-family: PT Sans; font-size: 16px; line-height: 26px; color: #2b2f40;}
+.payment_t {margin-top: 25px; font-family: PT Sans; padding-left: 0; padding-right: 0;}
+.lub_wpisz_t {margin-top: 40px; text-align: center; font-family: PT Sans; font-size: 16px; color: #2b2f40;}
+.pay_pal_t {
+display: inline-block;
+border-radius: 7pt;
+border: 4px solid #e20000;
+background-color: #f1f1f1;
+width: 145px;
+height: 160px;
+}
+#payment_left_t {
+margin-left: 0;
+}
+.img_in_pay_t {
+height: 60px;
+width: 50%;
+margin-left: 25%;
+}
+.inside_div_1_t {
+height: 40px;
+text-align: center;
+color: #2b2f40;
+background-color: #f1f1f1;
+font-weight: bold;
+font-size: 13px;
+padding-bottom: 2%;
+}
+.inside_div_2_t {
+height: 55px;
+width: 100%;
+text-align: center;
+color: #f1f1f1;
+background-color: #e20000;
+padding-bottom: 10px;
+padding-top: 10px;
+font-size: 13px;
+}
+#payment_center_t {
+margin-left: 62px;
+}
+#payment_right_t {
+float: right;
+}
+.button_all_t {
+margin-top: 10px; 
+font-size: 16px;
+text-align: center;
+color: #f1f1f1;
+background-color: #e20000;
+border-radius: 7pt;
+padding: 10px;
+}
+.last_button_t {
+width: 210px;
+margin-left: 180px;
 }
