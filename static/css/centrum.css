@@ -147,7 +147,7 @@ padding-top: 40px;
 }
 /*for Phone and Tablets*/
 @media only screen and (max-width: 767px) {
-.base_page_2 {max-width: 767px;}
+.base_page_2 {max-width: 767px; height: 75%;}
 .white_box {
 position: absolute;
 bottom: 0px;
@@ -161,8 +161,12 @@ background-size: 45px 45px;
 background-repeat: no-repeat;
 text-align: justify;
 }
-.pomoz_phone {font-family: PT Sans; font-size: 22px; color: #ff5a00; padding-top: 25px; padding-bottom: 25px; text-align: justify;}
+.pomoz_phone {font-family: PT Sans; font-size: 15px; color: #ff5a00; padding-top: 25px; padding-bottom: 25px; text-align: justify;}
+.kolejny_raz_phone {font-size: 15px}
 .base_page_2 {background-image: none}
+.count {margin-top: 10px}
+.content_title {font-size: 20px}
+.content_1 {padding-left: 0px; padding-right: 0px}
 }
 /*small Tablets only*/
 @media (min-width: 545px) and (max-width: 767px) {
@@ -175,9 +179,11 @@ background-size: 100% 100%;
 /*Only phone */
 @media only screen and (max-width: 544px) {
 header {height: 100%; background-image: url('../img/background_phone.jpg'); background-size: 100% 100%}
-.kolejny_raz_phone {font-size: 20px; padding-top: 20px; background-size: 30px 30px}
-.pomoz_phone {font-size: 18px; padding-top: 20px; padding-bottom: 20px}
+.base_page_2 {height: 140%;}
+.kolejny_raz_phone {padding-top: 20px; background-size: 30px 30px}
+.pomoz_phone {padding-top: 20px; padding-bottom: 20px}
 .payment {display: none;}
+.count {margin-bottom: 20px}
 .control_box {
 width: 100%;
 text-align: center;
