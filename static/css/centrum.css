@@ -145,7 +145,7 @@ padding-top: 40px;
 .last_button {width: 184px; margin-left: 85px;}
 }
 /*for Phone and Tablets*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 .base_page_2 {max-width: 767px}
 .white_box {
 position: absolute;
