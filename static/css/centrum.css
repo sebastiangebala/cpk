@@ -181,8 +181,8 @@ padding-left: 5%; padding-right: 5%
 /*Only phone */
 @media only screen and (max-width: 544px) {
 header {background-image: url('../img/background_phone.jpg'); background-repeat: no-repeat; background-position: center; height: 667px;}
-.kolejny_raz_phone {padding-top: 20px; background-size: 30px 30px}
-.pomoz_phone {padding-top: 20px; padding-bottom: 20px}
+.kolejny_raz_phone {font-size: 20px; padding-top: 20px; background-size: 30px 30px}
+.pomoz_phone {padding-top: 20px; padding-bottom: 20px; font-size: 16px; }
 .payment {display: none;}
 .count {margin-bottom: 20px}
 .control_box {
@@ -190,6 +190,8 @@ width: 100%;
 text-align: center;
 margin-bottom: 30px;
 }
+.content_title {font-size: 20px;}
+.before_foot {font-size: 16px; }
 .pay_pal_phone {
 display: inline-block;
 width: 145px;
