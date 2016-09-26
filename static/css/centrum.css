@@ -219,6 +219,7 @@ background-color: #f1f1f1;
 .inside_div_1 {height: 40px}
 .payment {display: none;}
 .cpk_img {width:50px; height: 40px;}
+.button_all_2 {font-size: 20px; }
 }
 /* pay-pal */
 @media only screen and (min-width: 544px) {
