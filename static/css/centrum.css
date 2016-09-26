@@ -28,6 +28,7 @@ margin-top: 20px;
 background-repeat: no-repeat;
 max-width: 600px;
 }
+.left {float: right; width: 100%;}
 .kolejny_raz {margin-top: 35px; padding-left: 0; font-family: PT Serif; font-size: 24px; line-height: 29px; color: #2b2f40; font-weight: bold; padding-right: 0;}
 .pomoz {margin-top: 30px; font-family: PT Sans; font-size: 20px; color: #ff5a00; background-color: #f1f1f1; border-radius: 7pt; padding: 15px;}
 .count {margin-top: 15px; font-family: PT Sans; font-size: 16px; line-height: 26px; color: #2b2f40}
@@ -151,7 +152,7 @@ header {background-image: url('../img/background_2.jpg'); height: 665px;}
 .base_page_2 {max-width: 450px; margin-top: 10px; background-size: 45px 45px;}
 .kolejny_raz {font-size: 17px; margin-top: 20px; line-height: 23px;}
 .pomoz {font-size: 15px; margin-top: 25px}
-.count {font-size: 15px; margin-top: 12px}
+.count {font-size: 15px; margin-top: 12px;}
 .lub_wpisz {font-size: 13px; margin-top: 20px}
 .button_all {font-size: 13px; margin-top: 20px}
 .pay_pal {width: 120px; height: 130px; border: 2px solid #e20000; margin-top: 25px}
@@ -176,24 +177,30 @@ padding-top: 10px;
 background-image: url('../img/cudzyslow.png');
 background-size: 45px 45px;
 background-repeat: no-repeat;
-padding-left: 5%; 
-padding-right: 5%
+padding-left: 3%; 
+padding-right: 3%
 }
-.pomoz_phone {font-family: PT Sans; font-size: 20px; color: #ff5a00; padding-top: 25px; padding-bottom: 25px; padding-left: 5%; padding-right: 5%}
+.pomoz_phone {font-family: PT Sans; font-size: 20px; color: #ff5a00; padding-top: 25px; padding-bottom: 25px; padding-left: 3%; padding-right: 3%}
 .content_title {padding-left: 5%; padding-right: 5%; max-width: 992px;}
 .content-text {padding-left: 5%; padding-right: 5%; max-width: 992px;}
-.count {margin-top: 15px; margin-bottom: 45px}
+.count {margin-top: 15px; margin-bottom: 45px; margin-left: 1%;}
 .content_1 {padding-left: 0px; padding-right: 0px;}
 .last_button {margin-bottom: 75px}
 .button_all {padding-left: 35px; padding-right: 35px}
 .before_foot {padding-left: 5%; padding-right: 5%; font-size: 20px; margin-bottom: 35px;}
 .content_3 {width: 100%; text-align: center; margin-bottom: 35px;}
 .button_all_2 {padding-left: 20px; padding-right: 20px; display: inline;}
-.pay_pal {width: 150px; height: 150px}
+.pay_pal {width: 150px; height: 150px;}
 .inside_div_2 {height: 50px; padding-top: 5px;}
 .inside_div_1 {height: 35px}
 .cpk_img {width:100px; height: 80px; margin-left: 0px; margin-top: 20px;}
 .content_2 {padding-left: 25px; margin-bottom: 25px;}
+#payment_left {margin-left: 10%;}
+#payment_right {margin-right: 10%;}
+}
+@media (min-width: 544px) and (max-width: 700px) {
+#payment_left {margin-left: 0%;}
+#payment_right {margin-right: 0%;}
 }
 /*Only phone */
 @media only screen and (max-width: 544px) {
