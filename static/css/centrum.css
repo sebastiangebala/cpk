@@ -102,6 +102,7 @@ font-size: 26px;
 font-weight: bold;
 color: #FF4F00;
 margin-top: 30px;
+max-width: 600px;
 }
 #color_1 {color: #ff5a00}
 #color_2 {color: #ff5a00}
@@ -109,6 +110,7 @@ margin-top: 30px;
 font-family: PT Sans;
 font-size: 15px;
 text-align: justify;
+max-width: 600px;
 }
 .before_foot {
 font-family: PT Serif; 
@@ -178,8 +180,8 @@ padding-left: 5%;
 padding-right: 5%
 }
 .pomoz_phone {font-family: PT Sans; font-size: 20px; color: #ff5a00; padding-top: 25px; padding-bottom: 25px; padding-left: 5%; padding-right: 5%}
-.content_title {padding-left: 5%; padding-right: 5%}
-.content-text {padding-left: 5%; padding-right: 5%}
+.content_title {padding-left: 5%; padding-right: 5%; max-width: 992px;}
+.content-text {padding-left: 5%; padding-right: 5%; max-width: 992px;}
 .count {margin-top: 15px; margin-bottom: 45px}
 .content_1 {padding-left: 0px; padding-right: 0px;}
 .last_button {margin-bottom: 75px}
@@ -191,7 +193,7 @@ padding-right: 5%
 .inside_div_2 {height: 50px; padding-top: 5px;}
 .inside_div_1 {height: 35px}
 .cpk_img {width:100px; height: 80px; margin-left: 0px; margin-top: 20px;}
-.content_2 {padding-left: 25px; margin-bottom: 25px;}
+.content_2 {padding-left: 25px; margin-bottom: 25px; text-decoration: none;}
 }
 /*Only phone */
 @media only screen and (max-width: 544px) {
@@ -218,7 +220,7 @@ background-color: #f1f1f1;
 .inside_div_2 {height: 55px; padding-top: 10px;}
 .inside_div_1 {height: 40px}
 .payment {display: none;}
-.cpk_img {width:50px; height: 40px;}
+.cpk_img {width:50px; height: 40px; position: absolute; left: 0px}
 .button_all_2 {font-size: 20px; }
 }
 /* pay-pal */
