@@ -130,11 +130,14 @@ border-radius: 4pt;
 font-family: PT Sans;
 padding-top: 12px;
 padding-bottom: 12px;
-width: 300px
+width: 300px;
+display: inline;
+padding-left: 25px; padding-right: 25px
 }
 .pasek {
 background-image: url('../img/pasek_dolny.jpg');
 background-size: 100% 100%;
+
 }
 .content_2 {
 font-family: PT Sans;
@@ -146,6 +149,9 @@ padding-bottom: 40px;
 font-family: PT Sans;
 padding-top: 40px;
 }
+.holder_div {max-width: 600px; float: right}
+.holder_div_2 {text-align: center; max-width: 600px; float: left}
+.button_foot {display: inline;}
 /*small Desktop*/
 @media (min-width: 992px) and (max-width: 1235px) {
 header {background-image: url('../img/background_2.jpg'); height: 665px;}
@@ -161,6 +167,10 @@ header {background-image: url('../img/background_2.jpg'); height: 665px;}
 .inside_div_2 {height: 43px; padding-top: 3px; font-size: 12px; border-radius: 0 0 7pt 7pt}
 .cpk_img {width:100px; height: 80px; margin-left: 3%}
 .button_all_2 {font-size: 20px; width: 250px}
+}
+/*for Large Desktop*/
+@media only screen and (min-width: 1600px) {
+.before_foot {text-align: center}
 }
 /*for Phone and Tablets*/
 @media only screen and (max-width: 992px) {
