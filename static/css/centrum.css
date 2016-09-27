@@ -4,7 +4,8 @@ border: 1px solid blue;
 html, body{
 height: 100%;
 }
-a.link {text-decoration: none}
+a:link {text-decoration: none}
+
 header {
 background-image: url('../img/background.jpg');
 background-repeat: no-repeat;
@@ -132,12 +133,11 @@ padding-top: 12px;
 padding-bottom: 12px;
 width: 300px;
 display: inline;
-padding-left: 25px; padding-right: 25px
+padding-left: 25px; padding-right: 25px;
 }
 .pasek {
 background-image: url('../img/pasek_dolny.jpg');
 background-size: 100% 100%;
-
 }
 .content_2 {
 font-family: PT Sans;
@@ -152,6 +152,7 @@ padding-top: 40px;
 .holder_div {max-width: 600px; float: right}
 .holder_div_2 {text-align: center; max-width: 600px; float: left}
 .button_foot {display: inline;}
+.pay_opa {box-shadow: 2px -2px 6px #000000, -2px 2px 6px #000000;}
 /*small Desktop*/
 @media (min-width: 992px) and (max-width: 1235px) {
 header {background-image: url('../img/background_2.jpg'); height: 665px;}
