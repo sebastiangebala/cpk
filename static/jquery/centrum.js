@@ -19,3 +19,14 @@ $(document).ready(function() {
 		$(this).removeClass("pay_opa");
 	});
 });
+
+$(document).ready(function() {
+	$('.button_all').mouseenter(function() {
+		$(this).addClass("pay_opa");
+	});
+});
+$(document).ready(function() {
+	$('.button_all').mouseleave(function() {
+		$(this).removeClass("pay_opa");
+	});
+});
